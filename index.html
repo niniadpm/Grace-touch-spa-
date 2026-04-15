@@ -16,8 +16,8 @@ body {
 header {
   background: linear-gradient(135deg, #c9a27e, #8b6f47);
   color: white;
-  padding: 70px 20px;
   text-align: center;
+  padding: 50px 20px;
 }
 
 header img {
@@ -28,67 +28,48 @@ header img {
   border: 3px solid white;
 }
 
-header h1 { margin: 0; font-size: 44px; }
-header p { font-size: 18px; margin-top: 10px; }
-
-nav {
-  background: #fff;
-  text-align: center;
-  padding: 12px;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-nav a {
-  margin: 0 12px;
-  color: #8b6f47;
-  text-decoration: none;
-  font-weight: bold;
-}
+h1 { margin: 0; font-size: 40px; }
+p.subtitle { font-size: 18px; }
 
 section {
-  padding: 60px 20px;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 30px;
+  padding: 40px 20px;
 }
 
 details {
   background: white;
-  border-radius: 12px;
   margin-bottom: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 summary {
   cursor: pointer;
-  font-weight: bold;
   padding: 15px;
+  font-weight: bold;
   font-size: 16px;
 }
 
-details img {
+img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
 }
 
-details p {
+.content {
   padding: 15px;
-  margin: 0;
 }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #2f2a26;
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #8b6f47;
   color: white;
+  border-radius: 8px;
+  text-decoration: none;
 }
 </style>
 </head>
@@ -96,68 +77,110 @@ footer {
 <body>
 
 <header>
-  <img src="logo.png" alt="Logo">
+  <img src="logo.png">
   <h1>Grace Touch Spa & Masajes</h1>
-  <p>Relajación, sanación y bienestar total</p>
+  <p class="subtitle">Relajación, sanación y bienestar total</p>
 </header>
 
 <section>
 
-<h2>Servicios</h2>
-
+<!-- PIEDRAS CALIENTES -->
 <details>
 <summary>🔥 Terapia de Piedras Calientes</summary>
-<img src="https://facesspa.com/wp-content/uploads/2022/10/Adult-woman-having-hot-stone-m.jpg">
-<p>💪 Físico: relaja músculos y reduce dolor<br>🧠 Mental: disminuye estrés<br>💖 Emocional: calma profunda</p>
+<img src="https://images.unsplash.com/photo-1519821172141-b5d8f2b3a3d5">
+<div class="content">
+💪 Físico: relaja músculos y reduce dolor<br>
+🧠 Mental: baja estrés y tensión<br>
+💖 Emocional: calma profunda<br>
+<a class="btn" href="https://wa.me/9187258886">Reservar</a>
+</div>
 </details>
 
+<!-- VELAS -->
 <details>
 <summary>🕯 Terapia con Velas</summary>
-<img src="https://www.bioaromacrete.com/wp-content/uploads/2022/10/Adult-woman-having-hot-stone-m.jpg">
-<p>💪 Físico: mejora circulación<br>🧠 Mental: reduce estrés<br>💖 Emocional: relajación profunda</p>
+<img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35">
+<div class="content">
+💪 Físico: mejora circulación<br>
+🧠 Mental: reduce ansiedad<br>
+💖 Emocional: relajación profunda<br>
+<a class="btn" href="https://wa.me/9187258886">Reservar</a>
+</div>
 </details>
 
+<!-- EMS -->
 <details>
 <summary>⚡ Terapia EMS (Electroterapia)</summary>
-<img src="https://ckphysio.co.uk/hubfs/blog/images/electrotherapy-guide-hero-hero-1.webp">
-<p>💪 Físico: activa músculos<br>🧠 Mental: energía y recuperación<br>💖 Emocional: bienestar corporal</p>
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<div class="content">
+💪 Físico: activa músculos<br>
+🧠 Mental: energía y recuperación<br>
+💖 Emocional: bienestar corporal<br>
+<a class="btn" href="https://wa.me/9187258886">Reservar</a>
+</div>
 </details>
 
+<!-- PIES -->
 <details>
 <summary>👣 Reflexología Podal</summary>
-<img src="https://fountainsdayspa.com/wp-content/uploads/2012/07/reflexology-foot-mapping-fountains-day-spa.jpg">
-<p>💪 Físico: mejora circulación<br>🧠 Mental: reduce ansiedad<br>💖 Emocional: equilibrio</p>
+<img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9">
+<div class="content">
+💪 Físico: mejora circulación<br>
+🧠 Mental: reduce ansiedad<br>
+💖 Emocional: equilibrio<br>
+<a class="btn" href="https://wa.me/9187258886">Reservar</a>
+</div>
 </details>
 
+<!-- HEAD SPA -->
 <details>
 <summary>💆‍♀️ Terapia Capilar Japonesa (Head Spa)</summary>
-<img src="https://www.headspa.net.au/post/what-is-a-head-spa-the-japanese-scalp-treatment-taking-over-australia">
-<p>💪 Físico: mejora circulación en cabeza<br>🧠 Mental: reduce estrés<br>💖 Emocional: relajación profunda</p>
+<img src="https://images.unsplash.com/photo-1559599101-f09722fb4948">
+<div class="content">
+💪 Físico: mejora circulación en cabeza<br>
+🧠 Mental: reduce estrés y migrañas<br>
+💖 Emocional: relajación profunda<br>
+<a class="btn" href="https://wa.me/9187258886">Reservar</a>
+</div>
 </details>
 
+<!-- SCRATCHING -->
 <details>
 <summary>Scratching</summary>
-<img src="https://img1.wsimg.com/isteam/ip/956c442d-83f9-4ea2-9041-113b542749c0/IMG_5959.jpg">
-<p>💪 Físico: estimulación corporal<br>🧠 Mental: libera tensión<br>💖 Emocional: alivio</p>
+<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15">
+<div class="content">
+💪 Físico: estimulación corporal<br>
+🧠 Mental: libera tensión<br>
+💖 Emocional: alivio<br>
+<a class="btn" href="https://wa.me/9187258886">Reservar</a>
+</div>
 </details>
 
+<!-- LINFÁTICO -->
 <details>
 <summary>🌿 Drenaje Linfático</summary>
-<img src="https://perfectskinstudio.co.uk/wp-content/uploads/2024/08/lymphatic-drainage-massage-clinics-in-London.png">
-<p>💪 Físico: elimina toxinas<br>🧠 Mental: ligereza corporal<br>💖 Emocional: bienestar</p>
+<img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde">
+<div class="content">
+💪 Físico: elimina toxinas<br>
+🧠 Mental: ligereza corporal<br>
+💖 Emocional: bienestar total<br>
+<a class="btn" href="https://wa.me/9187258886">Reservar</a>
+</div>
 </details>
 
+<!-- ANTI ESTRÉS -->
 <details>
 <summary>💆‍♀️ Masaje Anti-Estrés</summary>
 <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
-<p>💪 Físico: relaja músculos<br>🧠 Mental: reduce ansiedad<br>💖 Emocional: calma</p>
+<div class="content">
+💪 Físico: relaja músculos<br>
+🧠 Mental: reduce ansiedad<br>
+💖 Emocional: calma profunda<br>
+<a class="btn" href="https://wa.me/9187258886">Reservar</a>
+</div>
 </details>
 
 </section>
-
-<footer>
-© 2026 Grace Touch Spa & Masajes
-</footer>
 
 </body>
 </html>
