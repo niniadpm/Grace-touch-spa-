@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Grace Touch Spa & Massage</title>
+<title>Grace Touch Spa & Masajes</title>
 
 <style>
 body {
@@ -18,6 +18,15 @@ header {
   color: white;
   padding: 70px 20px;
   text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid white;
 }
 
 header h1 { margin: 0; font-size: 44px; }
@@ -51,15 +60,25 @@ nav a {
 
 section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
 }
 
 .card {
   background: white;
-  padding: 20px;
-  margin: 15px 0;
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   text-align: center;
 }
@@ -68,19 +87,12 @@ section {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.price {
-  font-size: 14px;
-  color: #777;
+.card p {
+  padding: 10px;
+  margin: 0;
+  font-weight: bold;
 }
 
 footer {
@@ -89,118 +101,125 @@ footer {
   background: #2f2a26;
   color: white;
 }
-
-.small {
-  font-size: 14px;
-  color: #555;
-}
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Grace Touch Spa & Massage</h1>
-  <p>Relaxation, Healing & Luxury Care | Relajación, Sanación y Bienestar</p>
-  <a class="btn" href="#booking">Book Now | Reservar</a>
+  <img src="logo.png" alt="Logo del Spa">
+  <h1>Grace Touch Spa & Masajes</h1>
+  <p>Relajación, sanación y bienestar total</p>
+  <a class="btn" href="#servicios">Ver servicios</a>
 </header>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#prices">Prices</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#contact">Contact</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#precios">Precios</a>
+  <a href="#contacto">Contacto</a>
 </nav>
 
-<section id="about">
-  <h2>About Us | Sobre Nosotros</h2>
+<!-- SERVICIOS -->
+<section id="servicios">
+<h2>Servicios</h2>
+
+<div class="grid">
+
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" />
-    We help you release stress, improve your health, and restore balance through professional massage therapy in a calm spa environment.
+    <img src="https://images.unsplash.com/photo-1519821172141-b5d8f2b3a3d5">
+    <p>🔥 Masaje con Piedras Calientes</p>
   </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35">
+    <p>🕯 Terapia con Velas</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571">
+    <p>🧘 Masaje Anti-Estrés</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
+    <p>💆 Masaje de Cabeza</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9">
+    <p>👣 Masaje de Pies</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde">
+    <p>🌿 Masaje Linfático</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+    <p>⚡ Terapia EMS (Electroestimulación Muscular)</p>
+  </div>
+
+</div>
 </section>
 
-<section id="services">
-  <h2>Services | Servicios</h2>
-  <div class="grid">
+<!-- PRECIOS -->
+<section id="precios">
+<h2>Precios por Servicio</h2>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15" />
-      💆 Relaxing Massage
-    </div>
+<div class="grid">
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35" />
-      🔥 Hot Stone Therapy
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571" />
-      🌿 Deep Tissue Massage
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1519821172141-b5d8f2b3a3d5" />
-      🧘 Anti-Stress Massage
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed" />
-      👣 Foot Reflexology
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" />
-      💆 Head & Scalp Massage
-    </div>
-
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1519821172141-b5d8f2b3a3d5">
+    <p>Masaje con Piedras Calientes</p>
   </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35">
+    <p>Terapia con Velas</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571">
+    <p>Masaje Anti-Estrés</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
+    <p>Masaje de Cabeza</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9">
+    <p>Masaje de Pies</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde">
+    <p>Masaje Linfático</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+    <p>Terapia EMS</p>
+  </div>
+
+</div>
 </section>
 
-<section id="prices">
-  <h2>Prices | Precios</h2>
-  <div class="grid">
-    <div class="card"><b>30 min</b><br>$40 - $60</div>
-    <div class="card"><b>60 min</b><br>$70 - $100</div>
-    <div class="card"><b>90 min</b><br>$110 - $140</div>
-  </div>
-  <p class="small">*Prices may vary depending on service type.</p>
-</section>
+<!-- CONTACTO -->
+<section id="contacto">
+<h2>Contacto</h2>
 
-<section id="reviews">
-  <h2>Reviews | Reseñas</h2>
-  <div class="card">
-    ⭐⭐⭐⭐⭐ "Amazing experience, very relaxing!" - Client
-  </div>
-  <div class="card">
-    ⭐⭐⭐⭐⭐ "Best massage in Oklahoma City." - Client
-  </div>
-</section>
+<p style="text-align:center;">
+📍 Oklahoma, tulsa, Estados Unidos <br>
+📞 WhatsApp: 9187258886
+</p>
 
-<section id="booking">
-  <h2>Booking | Reservas</h2>
-  <div class="card">
-    Book your appointment easily via WhatsApp.
-    <br><br>
-    <a class="btn" href="https://wa.me/9187258886">Book on WhatsApp</a>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact | Contacto</h2>
-  <div class="card">
-    📞 WhatsApp: 9187258886 <br>
-    📍 Oklahoma, Tulsa / Broken Arrow <br>
-    ⏰ Mon - Sun | 9AM - 5PM<br>
-    <br>
-    <iframe src="https://www.google.com/maps?q=Oklahoma City&output=embed"
-    width="100%" height="250" style="border:0;"></iframe>
-  </div>
 </section>
 
 <footer>
-  © 2026 Grace Touch Spa & Massage
+© 2026 Grace Touch Spa & Masajes
 </footer>
 
 </body>
