@@ -23,7 +23,6 @@ header {
 header img {
   width: 120px;
   height: 120px;
-  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
   border: 3px solid white;
@@ -31,16 +30,6 @@ header img {
 
 header h1 { margin: 0; font-size: 44px; }
 header p { font-size: 18px; margin-top: 10px; }
-
-.btn {
-  display: inline-block;
-  background: #8b6f47;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 12px;
-}
 
 nav {
   background: #fff;
@@ -69,30 +58,30 @@ h2 {
   margin-bottom: 30px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 18px;
-}
-
-.card {
+details {
   background: white;
   border-radius: 12px;
-  overflow: hidden;
+  margin-bottom: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  text-align: center;
+  overflow: hidden;
 }
 
-.card img {
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 16px;
+}
+
+details img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 
-.card p {
-  padding: 10px;
+details p {
+  padding: 15px;
   margin: 0;
-  font-weight: bold;
 }
 
 footer {
@@ -107,75 +96,62 @@ footer {
 <body>
 
 <header>
-  <img src="logo.png" alt="Logo Spa">
+  <img src="logo.png" alt="Logo">
   <h1>Grace Touch Spa & Masajes</h1>
   <p>Relajación, sanación y bienestar total</p>
-  <a class="btn" href="#servicios">Ver servicios</a>
 </header>
 
-<nav>
-  <a href="#servicios">Servicios</a>
-  <a href="#precios">Servicios</a>
-  <a href="#contacto">Contacto</a>
-</nav>
+<section>
 
-<!-- SERVICIOS -->
-<section id="servicios">
 <h2>Servicios</h2>
 
-<div class="grid">
+<details>
+<summary>🔥 Terapia de Piedras Calientes</summary>
+<img src="https://facesspa.com/wp-content/uploads/2022/10/Adult-woman-having-hot-stone-m.jpg">
+<p>💪 Físico: relaja músculos y reduce dolor<br>🧠 Mental: disminuye estrés<br>💖 Emocional: calma profunda</p>
+</details>
 
-  <div class="card">
-    <img src="https://facesspa.com/wp-content/uploads/2022/10/Adult-woman-having-hot-stone-m.jpg">
-    <p>🔥 Terapia de Piedras Calientes</p>
-  </div>
+<details>
+<summary>🕯 Terapia con Velas</summary>
+<img src="https://www.bioaromacrete.com/wp-content/uploads/2022/10/Adult-woman-having-hot-stone-m.jpg">
+<p>💪 Físico: mejora circulación<br>🧠 Mental: reduce estrés<br>💖 Emocional: relajación profunda</p>
+</details>
 
-  <div class="card">
-    <img src="https://www.bioaromacrete.com/wp-content/uploads/2022/10/Adult-woman-having-hot-stone-m.jpg">
-    <p>🕯 Terapia con Velas</p>
-  </div>
+<details>
+<summary>⚡ Terapia EMS (Electroterapia)</summary>
+<img src="https://ckphysio.co.uk/hubfs/blog/images/electrotherapy-guide-hero-hero-1.webp">
+<p>💪 Físico: activa músculos<br>🧠 Mental: energía y recuperación<br>💖 Emocional: bienestar corporal</p>
+</details>
 
-  <div class="card">
-    <img src="https://ckphysio.co.uk/hubfs/blog/images/electrotherapy-guide-hero-hero-1.webp">
-    <p>⚡ Terapia EMS (Electroterapia)</p>
-  </div>
+<details>
+<summary>👣 Reflexología Podal</summary>
+<img src="https://fountainsdayspa.com/wp-content/uploads/2012/07/reflexology-foot-mapping-fountains-day-spa.jpg">
+<p>💪 Físico: mejora circulación<br>🧠 Mental: reduce ansiedad<br>💖 Emocional: equilibrio</p>
+</details>
 
-  <div class="card">
-    <img src="https://fountainsdayspa.com/wp-content/uploads/2012/07/reflexology-foot-mapping-fountains-day-spa.jpg">
-    <p>👣 Reflexología Podal (Masaje de Pies)</p>
-  </div>
+<details>
+<summary>💆‍♀️ Terapia Capilar Japonesa (Head Spa)</summary>
+<img src="https://www.headspa.net.au/post/what-is-a-head-spa-the-japanese-scalp-treatment-taking-over-australia">
+<p>💪 Físico: mejora circulación en cabeza<br>🧠 Mental: reduce estrés<br>💖 Emocional: relajación profunda</p>
+</details>
 
-  <div class="card">
-    <img src="https://www.headspa.net.au/post/what-is-a-head-spa-the-japanese-scalp-treatment-taking-over-australia">
-    <p>💆‍♀️ Terapia Capilar Japonesa (Head Spa)</p>
-  </div>
+<details>
+<summary>Scratching</summary>
+<img src="https://img1.wsimg.com/isteam/ip/956c442d-83f9-4ea2-9041-113b542749c0/IMG_5959.jpg">
+<p>💪 Físico: estimulación corporal<br>🧠 Mental: libera tensión<br>💖 Emocional: alivio</p>
+</details>
 
-  <div class="card">
-    <img src="https://img1.wsimg.com/isteam/ip/956c442d-83f9-4ea2-9041-113b542749c0/IMG_5959.jpg">
-    <p>Scratching</p>
-  </div>
+<details>
+<summary>🌿 Drenaje Linfático</summary>
+<img src="https://perfectskinstudio.co.uk/wp-content/uploads/2024/08/lymphatic-drainage-massage-clinics-in-London.png">
+<p>💪 Físico: elimina toxinas<br>🧠 Mental: ligereza corporal<br>💖 Emocional: bienestar</p>
+</details>
 
-  <div class="card">
-    <img src="https://perfectskinstudio.co.uk/wp-content/uploads/2024/08/lymphatic-drainage-massage-clinics-in-London.png">
-    <p>🌿 Drenaje Linfático (Masaje Linfático)</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
-    <p>💆‍♀️ Masaje Anti-Estrés (Relajante)</p>
-  </div>
-
-</div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto">
-<h2>Contacto</h2>
-
-<p style="text-align:center;">
-📍 Oklahoma, Estados Unidos <br>
-📞 WhatsApp: 9187258886
-</p>
+<details>
+<summary>💆‍♀️ Masaje Anti-Estrés</summary>
+<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
+<p>💪 Físico: relaja músculos<br>🧠 Mental: reduce ansiedad<br>💖 Emocional: calma</p>
+</details>
 
 </section>
 
